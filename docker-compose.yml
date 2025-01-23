@@ -1,0 +1,10 @@
+services:
+  weather-app:
+    build: ./weather-app
+    ports:
+      - "5173:5173"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - ./weather-app:/app
+      - /app/node_modules
