@@ -59,10 +59,10 @@ const Forecast = ({ isToday, weatherData, city, index }) => {
       return HeavyRainImage;
     }
     if (weatherCode >= 85 && weatherCode <= 86) {
-      return snowImage;
+      return SnowImage;
     }
     if (weatherCode >= 95 && weatherCode <= 95) {
-      return snowImage;
+      return SnowImage;
     }
     if (weatherCode >= 96 && weatherCode <= 99) {
       return StormImage;
